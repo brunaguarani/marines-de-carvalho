@@ -246,6 +246,42 @@
   }
 }
 </style>
+
+<style id="foto-psicologia-tamanho-ajustado">
+/* Reduz a foto da seção Psicologia com acolhimento na mesma proporção do Hero */
+#sobre .intro-mark {
+  width: min(360px, 82%) !important;
+  min-height: 0 !important;
+  aspect-ratio: 0.786 !important;
+  justify-self: center !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+}
+#sobre .intro-mark img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 35% !important;
+}
+@media (max-width: 800px) {
+  #sobre .intro-mark { width: min(360px, 82%) !important; }
+}
+</style>
+
+<style id="ajuste-foto-psicologia-maior-texto-menor">
+/* Aumenta discretamente a foto da seção Psicologia com acolhimento e reduz a frase sobreposta */
+#sobre .intro-mark {
+  width: min(390px, 88%) !important;
+}
+#sobre .intro-mark strong {
+  font-size: 28px !important;
+  line-height: 1.18 !important;
+}
+@media (max-width: 800px) {
+  #sobre .intro-mark { width: min(390px, 88%) !important; }
+  #sobre .intro-mark strong { font-size: 25px !important; }
+}
+</style>
 </head>
 <body>
 
