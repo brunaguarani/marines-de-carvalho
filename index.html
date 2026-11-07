@@ -225,6 +225,27 @@
   }
 }
 </style>
+
+<style id="hero-foto-tamanho-ajustado">
+/* Reduz um pouco a foto do Hero, seguindo a proporção da referência enviada */
+.hero .visual-card {
+  width: min(360px, 82%) !important;
+  height: auto !important;
+  aspect-ratio: 0.786 !important;
+  border-radius: 18px !important;
+}
+.hero .visual-card img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 30% !important;
+}
+@media (max-width: 800px) {
+  .hero .visual-card {
+    width: min(360px, 82%) !important;
+  }
+}
+</style>
 </head>
 <body>
 
